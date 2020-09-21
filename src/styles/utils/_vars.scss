@@ -1,0 +1,77 @@
+// Colours
+$c-white: #fff;
+$c-black: #000;
+$c-blue: #95DBE5;
+$c-orange: #FF5C00;
+$c-grey: #7C7C7C;
+$c-grey-light: #b7b7b7;
+$c-grey-lighter: #eaeaea;
+$c-blue-light: #E7F7F9;
+$c-grey-bullet: #e6e6e6;
+$c-white-alt: #F2F1F6;
+
+// Layout
+$spacing: 15px;
+$spacing-multipliers: (
+  "xs": 2,
+  "sm": 3,
+  "md": 4,
+  "lg": 5,
+  "xl": 6
+);
+
+// fonts
+
+$robotoreg: "Roboto Regular", sans-serif;
+$robotolight: "Roboto Light", sans-serif;;
+$opensans: "Open Sans", sans-serif;
+
+// Breakpoints
+$breakpoints: (
+  "0": 0,
+  "xs": 480px,
+  "sm": 768px,
+  "md": 991px,
+  "lg": 1200px,
+  "xl": 1400px
+);
+
+//Spacing
+
+$padding: 0 8px;
+$mb-small: 40px;
+
+// Easings
+$ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+$ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+$ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+$ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+$ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+// Column widths
+
+$col-1: calc(100% / 12);
+$col-2: calc((100% / 12) * 2);
+$col-3: calc((100% / 12) * 3);
+$col-4: calc((100% / 12) * 4);
+$col-5: calc((100% / 12) * 5);
+$col-6: calc((100% / 12) * 6);
+$col-7: calc((100% / 12) * 7);
+$col-8: calc((100% / 12) * 8);
+$col-9: calc((100% / 12) * 9);
+$col-10: calc((100% / 12) * 10);

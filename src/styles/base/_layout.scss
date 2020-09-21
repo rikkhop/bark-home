@@ -1,0 +1,34 @@
+section {
+	margin-bottom: 93px;
+
+	@include bp(md) {
+		margin-bottom: 150px;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 1362px;
+	margin: 0 auto;
+	padding: 0 33px;
+
+	@include bp(md) {
+		padding: 0 55px;
+		max-width: 1440px;
+	}
+
+	&.no-gutter {
+		padding: 0;
+
+		.row {
+			margin: 0;
+		}
+	}
+}
+
+.row {
+	margin: 0 -8px;
+	display: flex;
+	flex-wrap: wrap;
+}
+

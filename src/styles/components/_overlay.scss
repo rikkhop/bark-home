@@ -1,0 +1,102 @@
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(00,00,00,0.6);
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	z-index: -1;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s linear 0.1s, z-index 0s linear 0.4s;
+	overflow: scroll;
+
+	&_active {
+		opacity: 1;
+		z-index: 50;
+		transition: opacity 0.3s linear 0.1s, z-index 0s linear;
+
+		& .overlay_inner {
+			opacity: 1;
+			transform: translateY(0);
+
+		}
+
+	}
+
+	&_inner {
+		background-color: $c-white;
+		margin: 0 auto;
+		position: relative;
+		opacity: 0;
+		transform: translateY(20px);
+		transition: transform 0.3s ease-out 0.4s, opacity 0.3s ease-out 0.4s;
+		margin: 50px auto;
+		border-radius: 4px;
+
+		@include bp(md) {
+			width: $col-8;
+			display: flex;
+		}
+	}
+
+	&_image {
+		padding-top: 20px;
+		background-color: $c-white-alt;
+		display: flex;
+		align-items: flex-end;
+		border-radius: 4px 4px 0 0;
+
+		@include bp(md) {
+			padding: 30px 30px 0;
+			width: $col-6;
+		}
+	}
+
+	&_img {
+		max-width: 120px;
+		margin: 0 auto;
+
+		@include bp(md) {
+			max-width: 100%;
+		}
+	}
+
+	&_content {
+		padding: 43px 36px 57px;
+
+		@include bp(md) {
+			width: $col-6;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+
+	&_heading {
+		text-align: center;
+		margin-bottom: 33px;
+	}
+
+	&_form {
+		max-width: 320px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	&_close {
+		display: block;
+		width: 13px;
+		height: 13px;
+		background-image: url('./assets/img/svg/cross.svg');
+		position: absolute;
+		top: 21px;
+		right: 20px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

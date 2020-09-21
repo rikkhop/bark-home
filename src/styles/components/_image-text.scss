@@ -1,0 +1,60 @@
+.image-text {
+
+	.row {
+		align-items: center;
+	}
+	&_image {
+		background-size: contain;
+		background-repeat: no-repeat;
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 56px;
+
+		@include bp(md) {
+			width: $col-5;
+			margin-left: $col-1;
+		}
+
+		img {
+			margin: 0 auto;
+			max-width: 307px;
+			width: 100%;
+
+			@include bp(md) {
+				max-width: 510px;
+			}
+		}
+	}
+
+	&_heading {
+		margin: 0 auto;
+		margin-bottom: 34px;
+	}
+
+	&_content {
+		padding: $padding;
+		text-align: center;
+
+		@include bp(md) {
+			width: $col-4;
+			margin-left: $col-1;
+			text-align: left;
+		}
+
+		p {
+			margin-bottom: 32px;
+
+			@include bp(md) {
+				margin-bottom: 50px;
+			}
+		}
+
+		.btn {
+			margin: 0 auto;
+
+			@include bp(md) {
+				margin: 0;
+			}
+		}
+	}
+}

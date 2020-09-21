@@ -1,0 +1,231 @@
+.footer {
+
+	&_main {
+		margin-bottom: 47px;
+	}
+
+	&_logo {
+		padding: $padding;
+		width: 100%;
+		display: block;
+		margin-bottom: 50px;
+
+		@include bp(md) {
+			width: $col-3;
+		}
+
+		img {
+			max-width: 100px;
+		}
+	}
+
+	&_nav {
+		padding: $padding;
+		margin-bottom: 50px;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+
+		@include bp(md) {
+			width: $col-5;
+		}
+	}
+
+	&_social {
+		width: 100%;
+
+		@include bp(md) {
+			width: $col-4;
+			margin-left: $col-1;
+		}
+	}
+
+	&_social-link {
+		padding: $padding;
+		display: block;
+		margin-bottom: 40px;
+		display: flex;
+		align-items: flex-end;
+		text-decoration: none;
+		transition: color 0.3s linear;
+
+		svg {
+			display: block;
+			height: 16px;
+			width: 20px;
+			background-image: url(./assets/img/svg/arrow-forward.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			margin-left: 22px;
+
+			path,
+			polyline {
+				transition: stroke 0.3s linear;
+			}
+		}
+
+		&:hover {
+			path,
+			polyline {
+				stroke: darken($c-orange, 10%);
+			}
+		}
+	}
+
+	&_social-list {
+		display: flex;
+		padding: $padding;
+		flex-wrap: wrap;
+	}
+
+	.social {
+
+		&_link {
+			display: block;
+			height: 17px;
+			width: 22px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			&.facebook {
+				background-image: url(./assets/img/svg/social-fb.svg);
+			}
+
+			&.insta {
+				background-image: url(./assets/img/svg/social-insta.svg);
+			}
+
+			&.twitter {
+				background-image: url(./assets/img/svg/social-tw.svg);
+			}
+
+			&.youtube {
+				background-image: url(./assets/img/svg/social-yt.svg);
+			}
+		}
+
+		&_item {
+			margin-right: 30px;
+		}
+	}
+
+	&_sub {
+		&:before {
+			content: '';
+			display: block;
+			width: calc(100% - 32px);
+			margin: 0 auto;
+			height: 1px;
+			background-color: $c-grey-lighter;
+			margin-bottom: 50px;
+
+			@include bp(md) {
+				width: $col-9;
+				margin-left: $col-3;
+			}
+		}
+	}
+
+	.nav {
+		width: 50%;
+
+		@include bp(md) {
+			width: $col-2;
+		}
+		&_item {
+			width: 100%;
+		}
+		&_link {
+			color: $c-grey-light;
+			transition: color 0.3s linear;
+
+			&:hover {
+				color: $c-black;
+			}
+		}
+	}
+
+	.sub-nav {
+		padding: $padding;
+		display: flex;
+		margin-bottom: 27px;
+		width: 100%;
+		flex-wrap: wrap;
+
+		@include bp(md) {
+			width: $col-6;
+			margin-left: $col-3;
+		}
+
+		@include bp(lg) {
+			width: $col-4;
+		}
+
+		&_list {
+			width: 100%;
+		}
+
+		&_link {
+			width: 39px;
+			height: 27px;
+			background-size: contain;
+			display: block;
+			margin-right: 4px;
+			margin-bottom: 4px;
+
+			@include bp(md) {
+				width: 44px;
+				height: 31px;
+			}
+
+			&.paypal {
+				background-image: url(./assets/img/svg/payment-paypal.svg);
+			}
+
+			&.master {
+				background-image: url(./assets/img/svg/payment-mastercard.svg);
+			}
+
+			&.visa {
+				background-image: url(./assets/img/svg/payment-via.svg);
+			}
+
+			&.amex {
+				background-image: url(./assets/img/svg/payment-amex.svg);
+			}
+
+			&.maestro {
+				background-image: url(./assets/img/svg/payment-maestro.svg);
+			}
+
+			&.klarna {
+				background-image: url(./assets/img/svg/payment-klarna.svg);
+			}
+
+			&.apple {
+				background-image: url(./assets/img/svg/payment-apple.svg);
+			}
+
+			&.google {
+				background-image: url(./assets/img/svg/payment-google.svg);
+			}
+		}
+	}
+
+	&_sub-text {
+		padding: $padding;
+		margin-bottom: 55px;
+		font-size: 14px;
+		width: 100%;
+
+		@include bp(md) {
+			width: $col-3;
+		}
+
+		@include bp(lg) {
+			width: $col-4;
+			margin-left: $col-1;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.form {
+	text-align: center;
+
+	&_input {
+		background-color: $c-blue-light;
+		border: none;
+		padding: 14px 30px;
+		border-radius: 24px;
+		width: 100%;
+		margin-bottom: 14px;
+	}
+
+	&_text {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 34px;
+	}
+
+	&_submit {
+		margin: 0 auto;
+	}
+}

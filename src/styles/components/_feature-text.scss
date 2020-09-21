@@ -1,0 +1,66 @@
+.feature-text {
+
+	.container {
+
+	}
+
+	&_bg {
+		width: 100%;
+	}
+
+	&_content {
+		position: relative;
+		width: 100%;
+	}
+
+	&_inner {
+		text-align: center;
+		width: 100%;
+		max-width: 210px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		@include bp(md) {
+			max-width: 312px;
+		}
+	}
+
+	&_heading {
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 23px;
+
+		@include bp(md) {
+			margin-bottom: 50px;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-image: url(./assets/img/svg/shape-paw.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin: 0 auto;
+			margin-bottom: 20px;
+
+			@include bp(md) {
+				width: 28px;
+				height: 28px;
+			}
+		}
+	}
+
+	.small {
+		max-width: 176px;
+		display: block;
+		margin: 0 auto;
+
+		@include bp(md) {
+			max-width: none;
+		}
+	}
+}

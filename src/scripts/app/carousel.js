@@ -19,6 +19,7 @@ export default class Carousel {
 	_init_events() {
 		let self = this
 
+		// custom carousel controls
 		this.prev.addEventListener('click', function(){
 			self.carousel.go('<');
 		});
@@ -50,7 +51,5 @@ export default class Carousel {
 		})
 
 		this.carousel.mount()
-
-		
 	}
 }

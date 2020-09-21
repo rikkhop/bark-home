@@ -1,3 +1,8 @@
+main {
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
 section {
 	margin-bottom: 93px;
 
@@ -8,13 +13,13 @@ section {
 
 .container {
 	width: 100%;
-	max-width: 1362px;
+	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 33px;
 
 	@include bp(md) {
 		padding: 0 55px;
-		max-width: 1440px;
+		// max-width: 1440px;
 	}
 
 	&.no-gutter {
@@ -28,7 +33,14 @@ section {
 
 .row {
 	margin: 0 -8px;
+	-js-display: flex;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
+
+	.header & {
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 

@@ -5,13 +5,17 @@
 	background-color: rgba(00,00,00,0.6);
 	top: 0;
 	left: 0;
-	display: flex;
-	align-items: center;
 	z-index: -1;
-	justify-content: center;
 	opacity: 0;
 	transition: opacity 0.3s linear 0.1s, z-index 0s linear 0.4s;
 	overflow: scroll;
+
+	@include bp(sm) {
+		-js-display: flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
 	&_active {
 		opacity: 1;
@@ -21,9 +25,7 @@
 		& .overlay_inner {
 			opacity: 1;
 			transform: translateY(0);
-
 		}
-
 	}
 
 	&_inner {
@@ -38,6 +40,7 @@
 
 		@include bp(md) {
 			width: $col-8;
+			-js-display: flex;
 			display: flex;
 		}
 	}
@@ -45,6 +48,7 @@
 	&_image {
 		padding-top: 20px;
 		background-color: $c-white-alt;
+		-js-display: flex;
 		display: flex;
 		align-items: flex-end;
 		border-radius: 4px 4px 0 0;
@@ -69,6 +73,7 @@
 
 		@include bp(md) {
 			width: $col-6;
+			-js-display: flex;
 			display: flex;
 			justify-content: center;
 			flex-direction: column;

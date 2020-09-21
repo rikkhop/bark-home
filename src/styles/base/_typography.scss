@@ -43,6 +43,10 @@ h3 {
 	}
 }
 
+a {
+	font-family: $opensans;
+}
+
 .large {
 	font-size: 18px;
 	line-height: 28px;
@@ -57,10 +61,6 @@ h3 {
 		font-size: 14px;
 		line-height: 20px;
 	}
-}
-
-a {
-	font-family: $opensans;
 }
 
 .nav_link {

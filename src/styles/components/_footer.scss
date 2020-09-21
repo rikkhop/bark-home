@@ -23,6 +23,7 @@
 		padding: $padding;
 		margin-bottom: 50px;
 		width: 100%;
+		-js-display: flex;
 		display: flex;
 		flex-wrap: wrap;
 
@@ -44,6 +45,7 @@
 		padding: $padding;
 		display: block;
 		margin-bottom: 40px;
+		-js-display: flex;
 		display: flex;
 		align-items: flex-end;
 		text-decoration: none;
@@ -73,6 +75,7 @@
 	}
 
 	&_social-list {
+		-js-display: flex;
 		display: flex;
 		padding: $padding;
 		flex-wrap: wrap;
@@ -148,6 +151,7 @@
 
 	.sub-nav {
 		padding: $padding;
+		-js-display: flex;
 		display: flex;
 		margin-bottom: 27px;
 		width: 100%;

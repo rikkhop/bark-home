@@ -14,15 +14,15 @@
 			width: $col-5;
 			margin-left: $col-1;
 		}
+	}
 
-		img {
-			margin: 0 auto;
-			max-width: 307px;
-			width: 100%;
+	&_img {
+		margin: 0 auto;
+		max-width: 307px;
+		width: 100%;
 
-			@include bp(md) {
-				max-width: 510px;
-			}
+		@include bp(md) {
+			max-width: 510px;
 		}
 	}
 

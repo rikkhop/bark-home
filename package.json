@@ -53,6 +53,7 @@
     "workbox-webpack-plugin": "5.0.0"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.4.1"
+    "@glidejs/glide": "^3.4.1",
+    "flexibility": "^2.0.1"
   }
 }

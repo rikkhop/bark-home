@@ -4,8 +4,6 @@ export default class Header {
 		this.burger = this.el.querySelector('.burger')
 		this.close = this.el.querySelector('.nav_close')
 
-		console.log('header')
-
 		this._init()
 	}
 
@@ -16,18 +14,11 @@ export default class Header {
 	_init_events() {
 		this.burger.addEventListener('click', (e)=>{
 			e.preventDefault()
-			console.log('click')
 			this._open_nav()
 		})
 
 		window.addEventListener('scroll', ()=>{
-			let pos = window.scrollY
-
-			if(pos > 200) {
-				this.el.classList.add('header-sticky')
-			} else {
-				this.el.classList.remove('header-sticky')
-			}
+			this._sticky()
 		})
 	}
 
@@ -41,5 +32,15 @@ export default class Header {
 
 	_close_nav() {
 		this.el.classList.remove('nav-active')
+	}
+
+	_sticky() {
+		let pos = window.scrollY
+
+		if(pos > 200) {
+			this.el.classList.add('header-sticky')
+		} else {
+			this.el.classList.remove('header-sticky')
+		}
 	}
 }

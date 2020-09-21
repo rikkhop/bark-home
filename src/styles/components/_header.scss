@@ -43,7 +43,7 @@
 		}
 	}
 
-	&-sticky {
+	&.header-sticky {
 		position: fixed;
 		background: $c-orange;
 		padding: 30px 0;
@@ -61,11 +61,6 @@
 		}
 	}
 
-	.row {
-		justify-content: space-between;
-		align-items: center;
-	}
-
 	&_logo {
 		max-width: 117px;
 		width: 100%;
@@ -81,12 +76,14 @@
 		overflow: hidden;
 		height: 620px;
 		transition: transform 0.3s ease-in;
+		-js-display: flex;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 		@include bp(md) {
 			transform: translateY(0);
+			-js-display: flex;
 			display: flex;
 			position: relative;
 			width: auto;
@@ -123,13 +120,13 @@
 
 	.nav {
 		width: 100%;
+		-js-display: flex;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 
 		@include bp(md) {
-			display: flex;
 			flex-direction: row;
 		}
 
@@ -166,6 +163,7 @@
 			font-size: 30px;
 			line-height: 65px;
 			font-family: $robotoreg;
+			transition: color 0.3s linear;
 
 			&:hover {
 				color: lighten($c-orange, 20%);
@@ -183,6 +181,7 @@
 		}
 	}
 
+	&_burger,
 	.burger {
 		padding: $padding;
 		z-index: 10;
@@ -192,6 +191,7 @@
 		}
 
 		&_btn {
+			-js-display: flex;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
